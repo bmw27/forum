@@ -11,8 +11,8 @@ class ThreadTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Thread::class, 50)->create()->each(function ($thread) {
-            factory(App\Reply::class, 10)->create([
+        factory('App\Thread', 50)->create()->each(function ($thread) {
+            factory('App\Reply', 10)->create([
                 'thread_id' => $thread->id,
                 'user_id' => $thread->user_id
             ]);
