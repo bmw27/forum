@@ -13,11 +13,11 @@ class Thread extends Model
 
     public function user()
     {
-        return $this->belongsTo(App\User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function replies()
     {
-        return $this->hasMany(App\Reply::class);
+        return $this->hasMany(Reply::class);
     }
 }

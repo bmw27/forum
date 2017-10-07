@@ -8,11 +8,11 @@ class Reply extends Model
 {
     public function thread()
     {
-        return $this->belongsTo(App\Thread::class);
+        return $this->belongsTo(Thread::class);
     }
 
     public function user()
     {
-        return $this->belongsTo(App\User::class);
+        return $this->belongsTo(User::class);
     }
 }

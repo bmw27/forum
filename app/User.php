@@ -29,11 +29,11 @@ class User extends Authenticatable
 
     public function threads()
     {
-        return $this->hasMany(App\Thread::class);
+        return $this->hasMany(Thread::class);
     }
 
     public function replies()
     {
-        return $this->hasMany(App\Reply::class);
+        return $this->hasMany(Reply::class);
     }
 }
